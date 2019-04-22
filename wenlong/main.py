@@ -1,4 +1,3 @@
-
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import argparse
@@ -22,9 +21,15 @@ from torch.utils.data import Dataset
 import random
 
 PATH="/u/home/w/wenlongx/BERT/pytorch-pretrained-BERT"
+
+# This represents a file that lists all of the possible words occurring in the GO dataset
 VOCAB_PATH="/u/flashscratch/d/datduong/goAndGeneAnnotationDec2018/GO_db_complete_vocab.txt"
+
+# This we should not change, because it represents the initial word embeddings that
+# Dat has already pretrained on PubMed data
 INIT_EMB_PATH="/u/flashscratch/d/datduong/w2vModel1Gram11Nov2017/w2vModel1Gram11Nov2017.txt"
 
+# Pickle of the GO term objects
 PICKLE_PATH="/u/flashscratch/d/datduong/goAndGeneAnnotationDec2018/w2vDim300/EntDataJan19w300Base/GO_all_info_go_graph.pickle"
 
 

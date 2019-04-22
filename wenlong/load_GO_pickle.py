@@ -21,3 +21,9 @@ import helper
 sys.path.append('/u/flashscratch/d/datduong/GOmultitask/process_data/go_term_object')
 from go_term_object import *
 
+PICKLE_PATH="/u/flashscratch/d/datduong/goAndGeneAnnotationDec2018/w2vDim300/EntDataJan19w300Base/GO_all_info_go_graph.pickle"
+
+go_graph_pickle = open(PICKLE_PATH, "rb")
+go_graph = pickle.load(go_graph_pickle)
+
+print(go_graph)
